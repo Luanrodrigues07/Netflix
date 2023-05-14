@@ -1,0 +1,57 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: transparent;
+    transition: all ease 0.5s;
+  }
+
+header.black {
+    background-color: #141414;;
+}
+  
+  .header-logo {
+    height: 25px;
+  }
+  
+  .header-logo img {
+    height: 100%;
+  }
+  .header-user {
+    height: 45px;
+  }
+  .header-user img {
+    height: 100%;
+    border-radius: 3px;
+  }
+
+  .functions {
+    position: fixed;
+    top: 0;
+    left: 120px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    transition: all ease 0.5s;
+    border-bottom: 0px;
+  }
+
+  .functions a {
+    text-decoration: none;
+    padding: 3%;
+    color: #d5d5d5;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+  }
