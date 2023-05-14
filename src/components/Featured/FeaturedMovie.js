@@ -10,6 +10,17 @@ export default ({item}) =>{
         genres.push(item.genres[i].name)
     }
 
+    let description = item.overview;
+    if(description.length > 200){
+        description = description.substring(0, 200)+'...';
+    }
+
+    let dimi = item.vote_average;
+    if(dimi){
+        dimi = dimi * 10;
+        dimi = Math.round(dimi);
+    }
+
     return(
         <section className="featured" style={{
             backgroundSize: 'cover',
@@ -23,11 +34,11 @@ export default ({item}) =>{
                 <div className="featuredHorizontal">
                     <div className="featured-name">{item.original_name}</div>
                     <div className="featured-info">
-                        <div className="featured-point">{item.vote_average} pontos</div>
+                        <div className="featured-point">{dimi}% Relevante</div>
                         <div className="featured-year">{firstdate.getFullYear()}</div>
                         <div className="featured-seasons">{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? 's' : ''}</div>
                    </div>
-                   <div className="featured-description">{item.overview}</div>
+                   <div className="featured-description">{description}</div>
                    <div className="featured-buttons">
                     <a href="{`/whatch/${item.id}`}" className="featured-play">▶ Assistir</a>
                     <a href="{`/add/${item.id}`}" className="featured-add">+ Minha Lista</a>

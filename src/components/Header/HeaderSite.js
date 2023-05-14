@@ -1,5 +1,7 @@
 import React from "react";
 import './Header.css'
+import { FiSearch } from "react-icons/fi";
+import { IoNotificationsOutline } from "react-icons/io5";
 
 
 export default ({black}) => {
@@ -10,6 +12,12 @@ export default ({black}) => {
                 <a href="/">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2014_logo.svg"/>
                 </a>
+            </div>
+            <div className="shear">
+            <FiSearch/>
+            </div>
+            <div className="notif">
+            <IoNotificationsOutline/>
             </div>
             <div className="header-user">
                 <a href="">
@@ -23,6 +31,9 @@ export default ({black}) => {
                     <a href="/">Bombando</a>
                     <a href="/">Minha lista</a>
                     <a href="/">Navegar por idiomas</a>          
+                </div>
+                <div className="nameaba">
+                    <a href="/">Infantil</a>
                 </div>
         </header>
         

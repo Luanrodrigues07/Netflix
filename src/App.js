@@ -67,6 +67,11 @@ const App = () => {
         Todos os direitos de imagem são da Netflix<br/>
         Dados: Themoviedb.org
       </footer>
+      {movieList.length <= 0 &&
+      <div className="loading ">
+        <img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" alt="Carregando"/>
+      </div>
+      }
     </div>
   );
 } 

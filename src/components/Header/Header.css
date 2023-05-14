@@ -26,7 +26,7 @@ header.black {
     height: 100%;
   }
   .header-user {
-    height: 45px;
+    height: 35px;
   }
   .header-user img {
     height: 100%;
@@ -54,4 +54,41 @@ header.black {
     text-align: left;
     white-space: nowrap;
     cursor: pointer;
+  }
+
+  @media (max-width:760px) {
+    .functions {
+      opacity: 0;
+    }
+
+  }
+  .shear  {
+    position: absolute;
+    right: 180px;
+    top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+
+
+  }
+  .notif {
+    position: absolute;
+    right: 85px;
+    top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+  .nameaba {
+    position: absolute;
+    right: 120px;
+    top: 30px;
+   
+  }
+
+  .nameaba a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    
   }
